@@ -1,6 +1,7 @@
 require.config({
     paths: {
-        jquery: '../bower_components/jquery/jquery'<% if (compassBootstrap) { %>,
+        jquery: '../bower_components/jquery/jquery',
+        angular: '../bower_components/angular/angular'<% if (compassBootstrap) { %>,
         bootstrapAffix: '../bower_components/sass-bootstrap/js/affix',
         bootstrapAlert: '../bower_components/sass-bootstrap/js/alert',
         bootstrapButton: '../bower_components/sass-bootstrap/js/button',
@@ -13,8 +14,11 @@ require.config({
         bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
         bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
         bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'<% } %>
-    }<% if (compassBootstrap) { %>,
+    },
     shim: {
+        angular : {
+            exports : 'angular'
+        }<% if (compassBootstrap) { %>,
         bootstrapAffix: {
             deps: ['jquery']
         },
@@ -54,9 +58,10 @@ require.config({
     }<% } %>
 });
 
-require(['app', 'jquery'], function (app, $) {
+require(['app', 'jquery', 'angular'], function (app, $) {
     'use strict';
     // use app here
     console.log(app);
     console.log('Running jQuery %s', $().jquery);
+    console.log('Running AngularJS %s', angular.version.full);
 });
