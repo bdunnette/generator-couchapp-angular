@@ -1,5 +1,5 @@
 {
-  "name": "generator-couchapp",
+  "name": "generator-couchapp-angular",
   "version": "0.1.0",
   "description": "Scaffold out a front-end web app; based on generator-webapp",
   "keywords": [
@@ -10,15 +10,16 @@
     "h5bp",
     "modernizr",
     "couchdb",
-    "couchapp"
+    "couchapp",
+    "angular"
   ],
-  "homepage": "https://github.com/garbados/generator-couchapp",
-  "bugs": "https://github.com/garbados/generator-couchapp/issues",
+  "homepage": "https://github.com/bdunnette/generator-couchapp-angular",
+  "bugs": "https://github.com/bdunnette/generator-couchapp-angular/issues",
   "author": "Chrome Developer Relations",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/garbados/generator-couchapp.git"
+    "url": "git://github.com/bdunnette/generator-couchapp-angular.git"
   },
   "scripts": {
     "test": "mocha --reporter spec"
