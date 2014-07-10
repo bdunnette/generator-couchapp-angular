@@ -1,7 +1,7 @@
 {
   "name": "generator-couchapp-angular",
   "version": "0.1.0",
-  "description": "Scaffold out a front-end web app; based on generator-webapp",
+  "description": "Scaffold out a front-end web app; based on generator-couchapp (and, by extension, generator-webapp)",
   "keywords": [
     "yeoman-generator",
     "web",
@@ -15,7 +15,7 @@
   ],
   "homepage": "https://github.com/bdunnette/generator-couchapp-angular",
   "bugs": "https://github.com/bdunnette/generator-couchapp-angular/issues",
-  "author": "Chrome Developer Relations",
+  "author": "Brian Dunnette",
   "main": "app/index.js",
   "repository": {
     "type": "git",
